@@ -2,8 +2,7 @@ function getWeatherInfo() {
     const name = document.getElementById('name').value;
     const location = document.getElementById('location').value;
 
-    // Assuming you have a function to fetch weather and country information from the server
-    // You need to implement this on your server side
+    
     function fetchInformationFromServer(name, location) {
         return fetch('/api/information', {
             method: 'POST',
