@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Country Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <h1>Weather and Country Information</h1>
+        <form id="weatherForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <button type="button" onclick="getWeatherInfo()">Get Information</button>
+        </form>
+
+        <div id="resultContainer">
+            <h2>Weather Information</h2>
+            <p id="weatherInfo"></p>
+            <h2>Country Details</h2>
+            <p id="countryInfo"></p>
+        </div>
+    </div>
+</body>
+
+</html>
