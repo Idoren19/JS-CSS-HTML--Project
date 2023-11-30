@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather and Country Information</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledex.html.css">
+    <title>Weather App</title>
 </head>
-
 <body>
-    <script src="script.js"></script>
     <div class="container">
-        <h1>Weather and Country Information</h1>
+        <h1>Weather App</h1>
         <form id="weatherForm">
-            <label for="name">Name:</label>
+            <label for="name">Your Name:</label>
             <input type="text" id="name" required>
 
-            <label for="location">Location:</label>
+            <label for="location">Your Location:</label>
             <input type="text" id="location" required>
 
-            <button type="button" onclick="getWeatherInfo()">Get Information</button>
+            <button type="button" onclick="getWeatherInfo()">Get Weather</button>
         </form>
 
-        <div id="resultContainer">
-            <h2>Weather Information</h2>
-            <p id="weatherInfo"></p>
-            <h2>Country Details</h2>
-            <p id="countryInfo"></p>
-        </div>
+        <div id="weatherInfo"></div>
+        <div id="countryInfo"></div>
     </div>
-</body>
 
+    <script src="app.js"></script>
+</body>
 </html>
